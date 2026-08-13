@@ -11,7 +11,7 @@ import {
   User 
 } from 'firebase/auth';
 import { getFirestore, doc, setDoc, getDoc } from 'firebase/firestore';
-import firebaseConfigData from '../../firebase-applet-config.json';
+import firebaseConfigData from '../firebase-applet-config.json';
 
 const firebaseConfig = {
   apiKey: firebaseConfigData.apiKey,
