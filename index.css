@@ -1,0 +1,270 @@
+@import "tailwindcss";
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+.font-audiowide {
+  font-family: 'Audiowide', cursive;
+}
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}
+.font-pixel {
+  font-family: 'Press Start 2P', cursive;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased selection:bg-amber-500/30 selection:text-amber-200 transition-colors duration-200;
+  }
+}
+
+/* Glassmorphism & Cyber Glow Utilities */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-amber {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(245, 158, 11, 0.08);
+}
+
+.glow-amber-sm {
+  box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.3);
+}
+
+.glow-amber-md {
+  box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.4);
+}
+
+.glow-cyan-sm {
+  box-shadow: 0 0 15px -3px rgba(34, 211, 238, 0.3);
+}
+
+/* Font size utilities */
+.font-size-small {
+  font-size: 13px;
+}
+.font-size-medium {
+  font-size: 15px;
+}
+.font-size-large {
+  font-size: 17px;
+}
+
+/* Background Pattern Utilities */
+.bg-pattern-grid {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-pattern-dots {
+  background-image: radial-gradient(rgba(245, 158, 11, 0.12) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+.bg-pattern-aura {
+  background-image: radial-gradient(circle at 50% 30%, rgba(245, 158, 11, 0.1), transparent 65%);
+}
+
+/* Theme 1: Dark Obsidian (Default Charcoal & Amber Glow) */
+.theme-dark-obsidian {
+  background-color: #020617;
+  color: #f8fafc;
+}
+.theme-dark-obsidian main {
+  background-color: #090e1a !important;
+}
+.theme-dark-obsidian header {
+  background-color: rgba(2, 6, 23, 0.85) !important;
+}
+.theme-dark-obsidian sidebar, .theme-dark-obsidian aside {
+  background-color: #020617 !important;
+}
+
+/* Theme 2: Midnight Cyber (Deep Navy & Neon Cyan) */
+.theme-midnight-cyber {
+  background-color: #020b18;
+  color: #e0f2fe;
+}
+.theme-midnight-cyber main {
+  background-color: #041329 !important;
+}
+.theme-midnight-cyber header {
+  background-color: rgba(2, 11, 24, 0.9) !important;
+  border-color: rgba(6, 182, 212, 0.2) !important;
+}
+.theme-midnight-cyber sidebar, .theme-midnight-cyber aside {
+  background-color: #010814 !important;
+  border-color: rgba(6, 182, 212, 0.15) !important;
+}
+
+/* Theme 3: Royal Amethyst (Deep Purple & Glowing Violet) */
+.theme-royal-amethyst {
+  background-color: #0d061a;
+  color: #f5f3ff;
+}
+.theme-royal-amethyst main {
+  background-color: #170b2e !important;
+}
+.theme-royal-amethyst header {
+  background-color: rgba(13, 6, 26, 0.9) !important;
+  border-color: rgba(168, 85, 247, 0.2) !important;
+}
+.theme-royal-amethyst sidebar, .theme-royal-amethyst aside {
+  background-color: #090412 !important;
+  border-color: rgba(168, 85, 247, 0.15) !important;
+}
+
+/* Theme 4: Crimson Flame (Deep Crimson & Ruby Flame) */
+.theme-crimson-flame {
+  background-color: #120408;
+  color: #fff1f2;
+}
+.theme-crimson-flame main {
+  background-color: #21070e !important;
+}
+.theme-crimson-flame header {
+  background-color: rgba(18, 4, 8, 0.9) !important;
+  border-color: rgba(244, 63, 94, 0.2) !important;
+}
+.theme-crimson-flame sidebar, .theme-crimson-flame aside {
+  background-color: #0b0205 !important;
+  border-color: rgba(244, 63, 94, 0.15) !important;
+}
+
+/* Theme 5: Emerald Drake (Deep Forest Green & Mint) */
+.theme-emerald-drake {
+  background-color: #02120b;
+  color: #ecfdf5;
+}
+.theme-emerald-drake main {
+  background-color: #052416 !important;
+}
+.theme-emerald-drake header {
+  background-color: rgba(2, 18, 11, 0.9) !important;
+  border-color: rgba(16, 185, 129, 0.2) !important;
+}
+.theme-emerald-drake sidebar, .theme-emerald-drake aside {
+  background-color: #010a06 !important;
+  border-color: rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Theme 6: Sunset Gold (Rich Warm Bronze & Amber) */
+.theme-sunset-gold {
+  background-color: #140d02;
+  color: #fffbeb;
+}
+.theme-sunset-gold main {
+  background-color: #241804 !important;
+}
+.theme-sunset-gold header {
+  background-color: rgba(20, 13, 2, 0.9) !important;
+  border-color: rgba(234, 179, 8, 0.2) !important;
+}
+.theme-sunset-gold sidebar, .theme-sunset-gold aside {
+  background-color: #0c0801 !important;
+  border-color: rgba(234, 179, 8, 0.15) !important;
+}
+
+/* Theme 7: Deep Ocean (Abyssal Ocean & Turquoise) */
+.theme-deep-ocean {
+  background-color: #031326;
+  color: #f0f9ff;
+}
+.theme-deep-ocean main {
+  background-color: #072242 !important;
+}
+.theme-deep-ocean header {
+  background-color: rgba(3, 19, 38, 0.9) !important;
+  border-color: rgba(56, 189, 248, 0.2) !important;
+}
+.theme-deep-ocean sidebar, .theme-deep-ocean aside {
+  background-color: #020c18 !important;
+  border-color: rgba(56, 189, 248, 0.15) !important;
+}
+
+/* Theme 8: Clean Light (Crisp Modern Light Mode) */
+.theme-clean-light {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+.theme-clean-light main {
+  background-color: #ffffff !important;
+}
+.theme-clean-light aside {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+.theme-clean-light header {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+.theme-clean-light textarea,
+.theme-clean-light input[type="text"] {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+.theme-clean-light .bg-slate-900,
+.theme-clean-light .bg-slate-950 {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #e2e8f0 !important;
+}
+.theme-clean-light .text-slate-200,
+.theme-clean-light .text-slate-300,
+.theme-clean-light .text-slate-400 {
+  color: #334155 !important;
+}
+
+/* Custom Animations */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.55);
+}
+
