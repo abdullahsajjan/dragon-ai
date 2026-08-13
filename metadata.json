@@ -1,0 +1,6 @@
+{
+  "name": "Dragon AI",
+  "description": "A high-performance AI chat workspace like Claude and ChatGPT, featuring real-time streaming, multimodal vision, reasoning thoughts, code artifacts preview, and custom dragon personas.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
